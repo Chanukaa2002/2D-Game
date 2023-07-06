@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>2D Game-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body" onload="idleAnimationStart(); createBoxes()" onkeypress="keyCheck(event)">
+    <div class="background" id="background">
+
+        <div class="score" id="score">0</div>
+        <img src="sourses/Idle (1).png" class="boy" id="boy">
+
+    </div>
+    <!--start screen-->
+    <div class="start" id="start">
+
+        <div style=" color:rgb(251,255,11);">Welcome</div>
+
+        <button class="btn" id="btn" onclick="startGame()">Start</button>
+
+    </div>
+
+    <!--End screen-->
+    <div class="end" id="end">
+
+        <div style="color:rgb(251,255,11);">Game Over</div>
+        <div style="color:rgb(145,189,0);">Your Score</div>
+        <div style="color:rgb(54,200,223);" id="endScore">0</div>
+        <button class="btn" id="btn" onclick="reload()">Try again</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
